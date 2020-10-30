@@ -7,14 +7,15 @@
 //
 
 import UIKit
+import Segment
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        Analytics.track("Carthage Main View Did Load")
-        Analytics.flush()
+        Analytics.shared().track("Carthage Main View Did Load")
+        Analytics.shared().flush()
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,8 +24,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func fireEvent(_ sender: AnyObject) {
-        Analytics.track("Carthage Button Pressed")
-        Analytics.flush()
+        Analytics.shared().track("Carthage Button Pressed")
+        Analytics.shared().flush()
     }
 
 }

@@ -7,11 +7,11 @@
 //
 
 import UIKit
-import Analytics
+import Segment
 
 // https://segment.com/segment-mobile/sources/ios_carthage_example/overview
 // Use your own writekey people :)
-let Analytics = SEGAnalytics(configuration: SEGAnalyticsConfiguration(writeKey: "b2XoQDHA5YhWQAjr2FZ4qIckgyEqXyY8"))
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,10 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        Analytics.setup(with: AnalyticsConfiguration(writeKey: "b2XoQDHA5YhWQAjr2FZ4qIckgyEqXyY8"))
         
         // Override point for customization after application launch.
-        Analytics.track("Carthage Example Launched")
-        Analytics.flush()
+        Analytics.shared().track("Carthage Example Launched")
+        Analytics.shared().flush()
         
         return true
     }

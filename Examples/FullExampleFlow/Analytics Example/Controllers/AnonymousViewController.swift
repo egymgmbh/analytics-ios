@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Analytics
+import Segment
 
 class AnonymousViewController: StepsViewController {
     

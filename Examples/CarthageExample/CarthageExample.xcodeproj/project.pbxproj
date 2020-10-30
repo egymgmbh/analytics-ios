@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91A1B21F254C3C8A00D25FDB /* Segment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A1B21E254C3C8A00D25FDB /* Segment.framework */; };
 		EAACFE571D25BFA400668199 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAACFE561D25BFA400668199 /* AppDelegate.swift */; };
 		EAACFE591D25BFA400668199 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAACFE581D25BFA400668199 /* ViewController.swift */; };
 		EAACFE5C1D25BFA400668199 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAACFE5A1D25BFA400668199 /* Main.storyboard */; };
 		EAACFE5E1D25BFA400668199 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAACFE5D1D25BFA400668199 /* Assets.xcassets */; };
 		EAACFE611D25BFA400668199 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAACFE5F1D25BFA400668199 /* LaunchScreen.storyboard */; };
-		EADEB9031DED3734005322DA /* Analytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EADEB9021DED3734005322DA /* Analytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		91A1B21E254C3C8A00D25FDB /* Segment.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Segment.framework; path = Carthage/Build/iOS/Segment.framework; sourceTree = "<group>"; };
 		EAACFE531D25BFA400668199 /* CarthageExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarthageExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAACFE561D25BFA400668199 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAACFE581D25BFA400668199 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,7 +24,6 @@
 		EAACFE5D1D25BFA400668199 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAACFE601D25BFA400668199 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAACFE621D25BFA400668199 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EADEB9021DED3734005322DA /* Analytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Analytics.framework; path = Carthage/Build/iOS/Analytics.framework; sourceTree = SOURCE_ROOT; };
 		EADEB9041DED3740005322DA /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = SOURCE_ROOT; };
 		EADEB9051DED3740005322DA /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -33,18 +33,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EADEB9031DED3734005322DA /* Analytics.framework in Frameworks */,
+				91A1B21F254C3C8A00D25FDB /* Segment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		91A1B21D254C3C8A00D25FDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91A1B21E254C3C8A00D25FDB /* Segment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EAACFE4A1D25BFA400668199 = {
 			isa = PBXGroup;
 			children = (
 				EAACFE551D25BFA400668199 /* CarthageExample */,
 				EAACFE541D25BFA400668199 /* Products */,
+				91A1B21D254C3C8A00D25FDB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,7 +74,6 @@
 				EAACFE5D1D25BFA400668199 /* Assets.xcassets */,
 				EAACFE5F1D25BFA400668199 /* LaunchScreen.storyboard */,
 				EAACFE621D25BFA400668199 /* Info.plist */,
-				EADEB9021DED3734005322DA /* Analytics.framework */,
 				EADEB9041DED3740005322DA /* Cartfile.resolved */,
 				EADEB9051DED3740005322DA /* Cartfile */,
 			);
@@ -114,6 +122,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -147,14 +156,14 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Analytics.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Segment.framework",
 			);
 			name = "Carthage Copy Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

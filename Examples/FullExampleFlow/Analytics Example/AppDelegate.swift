@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Analytics
+import Segment
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91A1B219254C3A5500D25FDB /* Segment in Frameworks */ = {isa = PBXBuildFile; productRef = 91A1B218254C3A5500D25FDB /* Segment */; };
 		9616DB59249050A600F7191B /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9616DB58249050A600F7191B /* SignupViewController.swift */; };
 		9616DB5B2490583800F7191B /* InviteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9616DB5A2490583800F7191B /* InviteViewController.swift */; };
-		961C617024BE5BED00A8B8E3 /* Analytics in Frameworks */ = {isa = PBXBuildFile; productRef = 961C616F24BE5BED00A8B8E3 /* Analytics */; };
 		961D80C024902143007C4F04 /* AnonymousViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961D80BC24902143007C4F04 /* AnonymousViewController.swift */; };
 		96BC0E4A24A57317000AF2EB /* SignoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BC0E4924A57317000AF2EB /* SignoutViewController.swift */; };
 		96BC0E4C24A693E3000AF2EB /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BC0E4B24A693E3000AF2EB /* SignInViewController.swift */; };
@@ -61,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				961C617024BE5BED00A8B8E3 /* Analytics in Frameworks */,
+				91A1B219254C3A5500D25FDB /* Segment in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +140,7 @@
 			);
 			name = "Analytics Example";
 			packageProductDependencies = (
-				961C616F24BE5BED00A8B8E3 /* Analytics */,
+				91A1B218254C3A5500D25FDB /* Segment */,
 			);
 			productName = "Analytics Example";
 			productReference = 96D0441B2485B458009C3FD7 /* Analytics Example.app */;
@@ -171,7 +171,7 @@
 			);
 			mainGroup = 96D044122485B458009C3FD7;
 			packageReferences = (
-				961C616E24BE5BED00A8B8E3 /* XCRemoteSwiftPackageReference "analytics-ios" */,
+				91A1B217254C3A5500D25FDB /* XCRemoteSwiftPackageReference "analytics-ios" */,
 			);
 			productRefGroup = 96D0441C2485B458009C3FD7 /* Products */;
 			projectDirPath = "";
@@ -422,21 +422,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		961C616E24BE5BED00A8B8E3 /* XCRemoteSwiftPackageReference "analytics-ios" */ = {
+		91A1B217254C3A5500D25FDB /* XCRemoteSwiftPackageReference "analytics-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/segmentio/analytics-ios.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 4.1.0;
+				minimumVersion = 4.1.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		961C616F24BE5BED00A8B8E3 /* Analytics */ = {
+		91A1B218254C3A5500D25FDB /* Segment */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 961C616E24BE5BED00A8B8E3 /* XCRemoteSwiftPackageReference "analytics-ios" */;
-			productName = Analytics;
+			package = 91A1B217254C3A5500D25FDB /* XCRemoteSwiftPackageReference "analytics-ios" */;
+			productName = Segment;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
